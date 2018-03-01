@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+</head>
+<body>
+<div id="root"><%- initialMarkup -%></div>
+<script type="text/javascript">
+    window.initialData = <%- JSON.stringify(initialData) -%>;
+  </script>
+<script src="/bundle.js" charset="utf-8"></script>
+</body>
+</html> 

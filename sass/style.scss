@@ -1,0 +1,43 @@
+html, body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.inline-menu {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+li.header {
+    padding: 1em;
+}
+
+li.header:hover {
+    cursor: pointer;
+    background-color: #8d0837;
+    color: white;
+}
+
+div.header{
+    position: fixed;
+    background-color: #8d0837;
+    top: 0;
+    margin: 0 auto;
+    width: 100%
+}
+
+.wraper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    background-color: yellow;
+    height: 100%;
+    margin-top: 50px;
+}
