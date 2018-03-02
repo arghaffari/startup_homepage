@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageHeaders from './PageHeaders';
-
+import AppDownload from './AppDownload';
 
 
 const Header = ({headers}) => {
   return (
     <div className="header">
-      <PageHeaders headers={headers} />
+      <div className="header-wrap">
+        <PageHeaders headers={headers} />
+        <AppDownload />
+      </div>
     </div>
   );
 };

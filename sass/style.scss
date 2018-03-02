@@ -4,40 +4,170 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: white;
+    vertical-align: baseline;
+    max-width: 1024px;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    vertical-align: baseline;
+    height: 100%;
 }
 
 .inline-menu {
     display: inline-flex;
     list-style-type: none;
-    margin: 0;
+    margin: 0.5em;
+    vertical-align: baseline;
 }
 
 li.header {
     padding: 1em;
+    vertical-align: baseline;
 }
 
 li.header:hover {
     cursor: pointer;
-    background-color: #8d0837;
     color: white;
 }
 
 div.header{
     position: fixed;
-    background-color: #8d0837;
     top: 0;
     margin: 0 auto;
-    width: 100%
+    z-index: 1000;
+    vertical-align: baseline;
+    width: 100%;
+    min-width: 800px;
+}
+
+.header-wrap {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .wraper {
     position: absolute;
     top: 0;
     bottom: 0;
-    margin: 0 auto;
     width: 100%;
-    padding: 20px;
-    background-color: yellow;
+    margin: 0 auto;
+    min-width: 800px;
+}
+
+.sections {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 90%;
+    margin: 0em auto;
+}
+
+#section-one {
+    background-color: #00eeff;
+}
+
+#section-two {
+    background-color: red;
+}
+
+#section-three {
+    background-color: white;
+}
+
+
+#section-four {
+    background-color: burlywood;
+    height: 70vh;
+}
+
+
+#section-five {
+    background-color: goldenrod;
+    height: 30vh;
+}
+
+#app-download {
+    float: left;
+    margin: 1em;
+    border: 1px solid grey;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5em;
+    width: 12%;
+}
+
+#app-download:hover {
+    background-color: grey;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.sub-section {
+    height: inherit;
+    position: relative;
+    text-align: center;
+}
+
+#cross-platform-svg {
+    width: 70%;
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    right: 50%;
+    transform: translate(70%, -50%);
+}
+
+#apps-decription {
     height: 100%;
-    margin-top: 50px;
+    background-color: white;
+    float: left;
+    clear: both;
+    width: 40%;
+}
+
+#apps-image {
+    width: 60%;
+    position: absolute;
+    height: inherit;
+    clear: both;
+    margin: 0 auto;
+    float: right;
+}
+
+.applink {
+    margin: 0 auto;
+    clear: both;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5px;
+    background: white;
+    height: 90px;
+    width: 250px;
+    padding: 10px 0 0px 10px;
+    margin: 10px;
+}
+
+.applink:hover {
+    cursor: pointer;
+    background-color: rgb(228, 232, 255);
+}
+
+.applink-span{
+    float: right;
+    margin: 5px;
+}
+
+#applinks {
+    width: 70%;
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    right: 50%;
+    transform: translate(70%, -50%);
 }
