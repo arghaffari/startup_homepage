@@ -26,12 +26,14 @@ html, body {
 
 li.header {
     padding: 1em;
+    color: grey;
     vertical-align: baseline;
+    font-weight: bold;
 }
 
 li.header:hover {
     cursor: pointer;
-    color: white;
+    color: black;   
 }
 
 div.header{
@@ -170,4 +172,11 @@ div.header{
     margin: 0 auto;
     right: 50%;
     transform: translate(70%, -50%);
+}
+
+.footer-container {
+    height: 100%;
+    background-color: white;
+    float: right;
+    width: 25%;
 }
