@@ -23,13 +23,13 @@ html, body {
 
 li.header {
   padding: 1em;
-  color: grey;
+  color: #8898aa;
   vertical-align: baseline;
   font-weight: bold; }
 
 li.header:hover {
   cursor: pointer;
-  color: black; }
+  color: #32325d; }
 
 div.header {
   position: fixed;
@@ -58,13 +58,11 @@ div.header {
   top: 0;
   height: 100vh;
   width: 90%;
-  margin: 0em auto; }
-
-#section-one {
-  background-color: #00eeff; }
+  margin: 0em auto;
+  padding: 30px; }
 
 #section-two {
-  background-color: red; }
+  background-color: wheat; }
 
 #section-three {
   background-color: white; }
@@ -74,21 +72,19 @@ div.header {
   height: 70vh; }
 
 #section-five {
-  background-color: goldenrod;
   height: 30vh; }
 
 #app-download {
   float: left;
   margin: 1em;
-  border: 1px solid grey;
-  background: white;
+  border: 1px solid #8898aa;
   border-radius: 5px;
   text-align: center;
   padding: 0.5em;
-  width: 12%; }
+  width: 10%; }
 
 #app-download:hover {
-  background-color: grey;
+  background-color: #8898aa;
   cursor: pointer;
   color: white;
   text-align: center; }
@@ -129,8 +125,8 @@ div.header {
   background: white;
   height: 90px;
   width: 250px;
-  padding: 10px 0 0px 10px;
-  margin: 10px; }
+  padding: 5px;
+  margin-bottom: 15px; }
 
 .applink:hover {
   cursor: pointer;
@@ -150,6 +146,67 @@ div.header {
 
 .footer-container {
   height: 100%;
-  background-color: white;
   float: right;
+  text-align: justify;
+  width: 20%; }
+
+.text-color-one {
+  color: #8898aa;
+  font-size: 15px;
+  margin: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+h1.text-color-one {
+  color: #8898aa;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
+  margin-bottom: 0;
+  text-align: justify;
+  vertical-align: baseline; }
+
+p.text-color-one:hover {
+  color: #32325d;
+  cursor: pointer; }
+
+#header-support {
+  display: inline-flex;
+  float: left; }
+
+#header-support-phone {
+  display: inline-flex;
+  margin-left: 1.8em; }
+
+#header-support-social-media {
+  vertical-align: baseline;
+  display: inline-flex; }
+
+.header-supports {
+  padding: 1em 0.3em 1em 0.3em;
+  color: #8898aa;
+  vertical-align: baseline;
+  font-weight: normal;
+  display: inline-flex;
+  margin: 0.5em 0 0.5em 0; }
+
+.link:hover {
+  color: #32325d;
+  cursor: pointer; }
+
+.feature-container {
+  width: 100%;
+  height: 100%;
+  clear: both; }
+
+.feature-grid {
+  height: 100%;
+  float: right;
+  text-align: justify;
+  background-color: yellow;
   width: 25%; }
