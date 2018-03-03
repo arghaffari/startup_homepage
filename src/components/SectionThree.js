@@ -11,15 +11,15 @@ class SectionThree extends React.Component {
             <div id="applinks">
               <div className="applink">
                 <span className="applink-span">کافه بازار</span>
-                <FaAndroid size={80} style={{color: 'grey'}}/>
+                <FaAndroid size={50} style={{color: 'grey'}}/>
               </div>
               <div className="applink">
                 <span className="applink-span">مستقیم</span>
-                <FaDownload size={80} style={{color: 'grey'}}/>
+                <FaDownload size={50} style={{color: 'grey'}}/>
               </div>
               <div className="applink">
                 <span className="applink-span">تحت وب</span>
-                <FaCloud size={80} style={{color: 'grey'}}/>
+                <FaCloud size={50} style={{color: 'grey'}}/>
               </div>
             </div>
           </div>
