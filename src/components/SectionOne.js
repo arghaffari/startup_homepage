@@ -6,6 +6,9 @@ class SectionOne extends React.Component {
   render(){
     return(
       <div className="sections" id="section-one">
+        <div className="sub-section">
+          
+        </div>
       </div>
     );
   }
