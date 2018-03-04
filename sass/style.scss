@@ -252,7 +252,7 @@ p.text-color-one:hover {
 
 .grid-container {
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 3em;
     grid-template-columns: auto auto auto;
     padding: 10px;
     height: 90%;
@@ -262,12 +262,55 @@ p.text-color-one:hover {
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    -webkit-box-shadow: 3px 3px 18px 0px rgba(227,220,247,0.98);
-    -moz-box-shadow: 3px 3px 18px 0px rgba(227,220,247,0.98);
-    box-shadow: 3px 3px 18px 0px rgba(227,220,247,0.98)
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    transition-property: color,background-color,box-shadow,transform;
+    transition-duration: .15s;
   }
 
   .grid-item:hover {
-    transform: scale(1.04);
+    color: #32325d!important;
+    transform: translateY(-2px);
+    box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+
     cursor: pointer;
+  }
+
+  .hover {
+    color: #6772e5;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+
+  .hover:hover {
+    color: #32325d;
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    transform: translateY(-1px);
+  }
+
+  .more {
+      font-size: 16px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 0;
+      float: left;
+      left: 0;
+      margin: 20px;
+      color: #6772e5;
+      
+  }
+
+  .more:hover {
+  }
+
+  .feature-desc {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #6b7c93;
+  }
+
+  .feature-header {
+    margin: 0px;
+    color: #24b47e;
   }
