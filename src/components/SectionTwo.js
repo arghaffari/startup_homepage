@@ -24,73 +24,73 @@ class SectionTwo extends React.Component {
             <div className="grid-container">
               <div className="grid-item">
                 <MdPhonelinkSetup size={50} className="feature-header" />
-                <h5 className="feature-header">
+                <h6 className="feature-header">
                    نصب و راه‌اندازی بسیار ساده
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <MdSecurity size={50} className="feature-header" />
-                <h5 className="feature-header">
+                <h6 className="feature-header">
                 تضمین امنیت و محرمانگی
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <FaCoffee size={50} className="feature-header" />
-                <h5 className="feature-header">
+                <h6 className="feature-header">
                    رابط کاربری حرفه‌ای و ساده
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>   
               <div className="grid-item">
                 <MdApps size={50} className="feature-header" />
-                <h5 className="feature-header" >
+                <h6 className="feature-header" >
                    سیستمی کامل و یکپارچه
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <MdCloudDone size={50} className="feature-header" />
-                <h5 className="feature-header" >
+                <h6 className="feature-header" >
                    استفاده به صورت آنلاین و آفلاین
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <MdUpdate size={50} className="feature-header" />
-                <h5 className="feature-header" >
+                <h6 className="feature-header" >
                    به روزرسانی مستمر از راه دور
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <MdBusiness size={50} className="feature-header" />
-                <h5 className="feature-header" >
+                <h6 className="feature-header" >
                    مدیریت چند فروشگاه بصورت همزمان
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <MdDevices size={50} className="feature-header" />
-                <h5 className="feature-header" >
+                <h6 className="feature-header" >
                    دسترسی به حساب در هر زمان و مکان
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>
               <div className="grid-item">
                 <MdDoneAll size={50} className="feature-header" />
-                <h5 className="feature-header" >
+                <h6 className="feature-header" >
                    به روز رسانی اطلاعات به صورت لحظه‌ای
-                </h5>
+                </h6>
                 <p className="feature-desc">یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک یک </p>
                 <div className="more">بیشتر بدانید ...</div>
               </div>

@@ -26,13 +26,13 @@ h1, h2 {
 
 li.header {
   padding: 1em;
-  color: #8898aa;
+  color: white;
   vertical-align: baseline;
   font-weight: bold; }
 
 li.header:hover {
   cursor: pointer;
-  color: #32325d; }
+  color: rgba(255, 255, 255, 0.5); }
 
 div.header {
   position: relative;
@@ -46,8 +46,7 @@ div.header {
 .header-wrap {
   width: 90%;
   margin: 0 auto;
-  height: 100%;
-  background-color: whitesmoke; }
+  height: 100%; }
 
 .wraper {
   position: absolute;
@@ -66,11 +65,10 @@ div.header {
   padding: 30px; }
 
 #section-one {
-  height: 60vh;
-  background-color: whitesmoke; }
+  height: 100vh; }
 
 #section-two {
-  height: 140vh; }
+  height: 160vh; }
 
 #section-three {
   background-color: white; }
@@ -85,17 +83,22 @@ div.header {
 #app-download {
   float: left;
   margin: 1em;
-  border: 1px solid #8898aa;
   border-radius: 5px;
   text-align: center;
   padding: 0.5em;
-  width: 10%; }
+  width: 10%;
+  color: #fff;
+  background: #3ecf8e;
+  text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
 
 #app-download:hover {
-  background-color: #8898aa;
   cursor: pointer;
   color: white;
-  text-align: center; }
+  text-align: center;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); }
 
 .sub-section {
   height: inherit;
@@ -197,9 +200,9 @@ p.text-color-one:hover {
 
 .header-supports {
   padding: 1em 0.3em 1em 0.3em;
-  color: #8898aa;
+  color: white;
   vertical-align: baseline;
-  font-weight: normal;
+  font-weight: bold;
   display: inline-flex;
   margin: 0.5em 0 0.5em 0; }
 
@@ -259,10 +262,20 @@ p.text-color-one:hover {
 
 .feature-desc {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 26px;
   color: #6b7c93; }
 
 .feature-header {
   margin: 0px;
   color: #24b47e; }
+
+.backg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background: linear-gradient(175deg, #53f 15%, #05d5ff 70%, white 94%);
+  position: absolute;
+  top: 0; }

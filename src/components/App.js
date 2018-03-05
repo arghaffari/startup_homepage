@@ -80,6 +80,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
+        <div className="backg" />
         <Header headers={this.getHeaders()} />
         <Main mainContent={this.getMainContents()}/>
       </div>
