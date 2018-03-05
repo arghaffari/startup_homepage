@@ -1,0 +1,35 @@
+header {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    z-index: 1000;
+    vertical-align: baseline;
+    width: 100%;
+    min-width: 960px;
+    
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    ul {
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0.5em;
+        vertical-align: baseline;
+    }
+    li {
+        padding: 1em;
+        color: $rich-black-primary;
+        vertical-align: baseline;
+        font-weight: bold;
+    }
+
+    a {
+        color: $white;
+        &:hover{
+            color: $rich-black-primary;
+            cursor: pointer;
+        }
+    }
+}

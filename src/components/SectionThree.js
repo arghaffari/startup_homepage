@@ -5,7 +5,7 @@ import { FaDownload, FaAndroid, FaCloud } from 'react-icons/lib/fa';
 class SectionThree extends React.Component {
   render(){
     return(
-      <div className="sections" id="section-three">
+      <div id="section-three">
         <div className="sub-section">
           <div id="apps-decription">
             <div id="applinks">

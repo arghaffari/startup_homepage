@@ -4,12 +4,8 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   vertical-align: baseline; }
-
-h1, h2 {
-  margin: 3px;
-  color: #32325d; }
 
 #root {
   margin: 0;
@@ -18,35 +14,18 @@ h1, h2 {
   vertical-align: baseline;
   height: 100%; }
 
-.inline-menu {
-  display: inline-flex;
-  list-style-type: none;
-  margin: 0.5em;
-  vertical-align: baseline; }
+h1, h2 {
+  margin: 3px;
+  color: #000022; }
 
-li.header {
-  padding: 1em;
-  color: white;
-  vertical-align: baseline;
-  font-weight: bold; }
+p {
+  color: #45455E; }
 
-li.header:hover {
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.5); }
+a {
+  color: #45455E; }
 
-div.header {
-  position: relative;
-  top: 0;
-  margin: 0 auto;
-  z-index: 1000;
-  vertical-align: baseline;
-  width: 100%;
-  min-width: 960px; }
-
-.header-wrap {
-  width: 90%;
-  margin: 0 auto;
-  height: 100%; }
+a:hover {
+  color: #000022; }
 
 .wraper {
   position: absolute;
@@ -55,14 +34,41 @@ div.header {
   width: 100%;
   margin: 0 auto;
   min-width: 960px; }
+  .wraper > div, .wraper > footer {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 90%;
+    margin: 0em auto;
+    padding: 30px; }
 
-.sections {
+header {
   position: relative;
   top: 0;
-  height: 100vh;
-  width: 90%;
-  margin: 0em auto;
-  padding: 30px; }
+  margin: 0 auto;
+  z-index: 1000;
+  vertical-align: baseline;
+  width: 100%;
+  min-width: 960px; }
+  header nav {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%; }
+  header ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0.5em;
+    vertical-align: baseline; }
+  header li {
+    padding: 1em;
+    color: #45455E;
+    vertical-align: baseline;
+    font-weight: bold; }
+  header a {
+    color: #fff; }
+    header a:hover {
+      color: #45455E;
+      cursor: pointer; }
 
 #section-one {
   height: 100vh; }

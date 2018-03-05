@@ -1,78 +1,16 @@
-html, body {
-    direction: rtl;
-    margin: 0 auto;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    vertical-align: baseline;
-}
 
-h1, h2 {
-    margin: 3px;
-    color: rgb(50, 50, 93);  
-}
+@import "../node_modules/bourbon/core/bourbon";
+// @import "../node_modules/normalize.css";
+@import "../node_modules/susy/sass/susy";
+@import 'partials/variables';
+@import 'partials/base';
+@import 'partials/footer';
+@import 'partials/header';
+@import 'partials/layout';
+@import 'partials/modules';
 
-#root {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    vertical-align: baseline;
-    height: 100%;
-}
 
-.inline-menu {
-    display: inline-flex;
-    list-style-type: none;
-    margin: 0.5em;
-    vertical-align: baseline;
-}
 
-li.header {
-    padding: 1em;
-    color: white;
-    vertical-align: baseline;
-    font-weight: bold;
-}
-
-li.header:hover {
-    cursor: pointer;
-    color:hsla(0,0%,100%,.5); 
-}
-
-div.header{
-    position: relative;
-    top: 0;
-    margin: 0 auto;
-    z-index: 1000;
-    vertical-align: baseline;
-    width: 100%;
-    min-width: 960px;
-}
-
-.header-wrap {
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-}
-
-.wraper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 960px;
-}
-
-.sections {
-    position: relative;
-    top: 0;
-    height: 100vh;
-    width: 90%;
-    margin: 0em auto;
-    padding: 30px;
-}
 
 #section-one {
     height: 100vh;

@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 const PageHeaders = ({headers}) => {
   return(
-    <ul className="inline-menu">
+    <ul>
       {Object.keys(headers).map((headerId) => {
-        return <li className="header" key={headers[headerId].id}>
-          {headers[headerId].persianTitle}
+        return <li key={headers[headerId].id}>
+          <a>{headers[headerId].persianTitle}</a>
         </li>;
       })}
     </ul>

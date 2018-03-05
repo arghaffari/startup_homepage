@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-class SectionFive extends React.Component {
+class Footer extends React.Component {
   render(){
     return(
-      <div className="sections" id="section-five">
+      <footer id="section-five">
         <div className="sub-section">
           <div className="footer-container">
             <h1 className="text-color-one">آرسیس</h1>
@@ -35,9 +35,15 @@ class SectionFive extends React.Component {
             <p className="text-color-one">قوانین</p>
           </div>
         </div>
-      </div>
+        <ul>
+          <li><a>تلگرام</a></li>
+          <li><a>اینستاگرام</a></li>
+          <li><a>آپارات</a></li>
+          <li><a>توییتر</a></li>
+        </ul>
+      </footer>
     );
   }
 }
 
-export default SectionFive;
+export default Footer;

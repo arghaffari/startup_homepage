@@ -16,7 +16,7 @@ import {
 class SectionTwo extends React.Component {
   render(){
     return(
-      <div className="sections" id="section-two">
+      <div id="section-two">
         <div className="sub-section">
           <h1>ما به کسب و کارها کمک می‌کنیم سریع تر رشد کنند</h1>
           <h2>ویژگی‌های منحصر به فرد رامونا چیست؟</h2>
