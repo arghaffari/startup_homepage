@@ -7,6 +7,7 @@ import SectionFour from './SectionFour';
 import Footer from './Footer';
 
 
+
 const Main = ({mainContent}) => {
   return (
     <div className="wraper">

@@ -25,6 +25,7 @@
     "susy": "^3.0.3"
   },
   "devDependencies": {
+    "antd": "^3.2.3",
     "autoprefixer": "^8.0.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",

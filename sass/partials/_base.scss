@@ -1,20 +1,20 @@
-html, body {
-    direction: rtl;
-    margin: 0 auto;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: $background-color;
-    vertical-align: baseline;
-}
+// html, body {
+//     direction: rtl;
+//     margin: 0 auto;
+//     padding: 0;
+//     height: 100%;
+//     width: 100%;
+//     background-color: $background-color;
+//     vertical-align: baseline;
+// }
 
-#root {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    vertical-align: baseline;
-    height: 100%;
-}
+// #root {
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     vertical-align: baseline;
+//     height: 100%;
+// }
 
 
 h1, h2 {
@@ -22,9 +22,7 @@ h1, h2 {
     color: $rich-black-secondary; 
 }
 
-p {
-    color: $rich-black-primary;
-}
+
 
 a {
     color: $rich-black-primary;
@@ -34,20 +32,40 @@ a:hover {
     color: $rich-black-secondary;
 }
 
-.wraper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 960px;
+// .wraper {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     width: 100%;
+//     margin: 0 auto;
+//     min-width: 960px;
 
-    > div, > footer {
-        position: relative;
-        top: 0;
-        height: 100vh;
-        width: 90%;
-        margin: 0em auto;
-        padding: 30px;
-    }
+//     > div, > footer {
+//         position: relative;
+//         top: 0;
+//         height: 100vh;
+//         width: 90%;
+//         margin: 0em auto;
+//         padding: 30px;
+//     }
+// }
+
+h1.main-title {
+    text-align: center;
+    
+    margin: 10px;
+}
+
+h2.sub-title {
+    text-align: center;
+    margin: 10px;
+}
+
+#cross-platform-svg {
+    width: 75%;
+    // position: relative;
+    // top: 50%;
+    margin: 0 auto;
+    // right: 50%;
+    // transform: translate(70%, -50%);
 }

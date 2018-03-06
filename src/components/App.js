@@ -1,8 +1,10 @@
 import React from 'react';
-import Header from './Header';
+import HeaderContainer from './HeaderContainer';
 import * as api from '../api';
 import PropTypes from 'prop-types';
 import Main from './Main';
+import { Layout } from 'antd';
+const { Header, Footer, Content } = Layout;
 
 const pushState = (obj, url) => {
   window.history.pushState(obj, '', url);
@@ -80,9 +82,12 @@ class App extends React.Component {
   render(){
     return (
       <div>
+        <Layout>
+          <HeaderContainer headers={this.getHeaders()} />
+          <Content><Main mainContent={this.getMainContents()}/></Content>
+          <Footer>Footer</Footer>
+        </Layout>
         <div className="backg" />
-        <Header headers={this.getHeaders()} />
-        <Main mainContent={this.getMainContents()}/>
       </div>
     );
   }
