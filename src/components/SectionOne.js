@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col } from 'antd';
-import { FaAngleDoubleLeft } from 'react-icons/lib/fa';
+import { Row, Col, Card } from 'antd';
+import { FaAngleDoubleLeft, FaGift } from 'react-icons/lib/fa';
 import { } from 'react-icons/lib/md/';
+import Subscription from './Subscription';
 
 
 
@@ -12,7 +13,7 @@ class SectionOne extends React.Component {
       <div id="section-one">
         <Row>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <h1 className="section-one-header">دخلتو همیشه همراهته!</h1>
+            <h1 className="section-one-header"><b>دخلتو</b> همیشه همراهته!</h1>
           </Col>
         </Row>
         <Row>
@@ -33,12 +34,17 @@ class SectionOne extends React.Component {
           <Col xs={24} sm={24} md={24} lg={24} xl={14} >
             <div className="section-one-desc">
               <h1 className="section-one-desc-header">
-              فروشگاهت از دور تو دستته
+                فروشگاه از دور تو دستته
               </h1>
               <p><FaAngleDoubleLeft />در هر زمان و مکان می تونی فروشگاه رو کنترل کنی</p>
               <p><FaAngleDoubleLeft />اطلاعاتت رو همیشه حتی تو گوشیت داشته باشی</p>
               <p><FaAngleDoubleLeft />کارمندها وشعب فروشگاه هاتو بیشتر کنی</p>
               <p><FaAngleDoubleLeft  />و بدونی استفاده از دخلتو انقدر سادست که نیاز به هیچ دانش تخصصی نداری ...</p>
+              <div className="subscription">
+                <Card title="از تخفیف‌ها و پیشنهادهای ویژه ما با خبر شو!"  style={{width: '100% !important', margin: '0 auto'}}>
+                  <Subscription />
+                </Card>
+              </div>
             </div>
           </Col>
         </Row>
