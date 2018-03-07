@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
+import { FaAngleDoubleLeft } from 'react-icons/lib/fa';
+import { } from 'react-icons/lib/md/';
+
 
 
 class SectionOne extends React.Component {
@@ -32,10 +35,10 @@ class SectionOne extends React.Component {
               <h1 className="section-one-desc-header">
               فروشگاهت از دور تو دستته
               </h1>
-              <p>در هر زمان و مکان می تونی فروشگاه رو کنترل کنی</p>
-              <p>اطلاعاتت رو همیشه حتی تو گوشیت داشته باشی</p>
-              <p>کارمندها وشعب فروشگاه هاتو بیشتر کنی</p>
-              <p>و بدونی استفاده از دخلتو انقدر سادست که نیاز به هیچ دانش تخصصی نداری ...</p>
+              <p><FaAngleDoubleLeft />در هر زمان و مکان می تونی فروشگاه رو کنترل کنی</p>
+              <p><FaAngleDoubleLeft />اطلاعاتت رو همیشه حتی تو گوشیت داشته باشی</p>
+              <p><FaAngleDoubleLeft />کارمندها وشعب فروشگاه هاتو بیشتر کنی</p>
+              <p><FaAngleDoubleLeft  />و بدونی استفاده از دخلتو انقدر سادست که نیاز به هیچ دانش تخصصی نداری ...</p>
             </div>
           </Col>
         </Row>
