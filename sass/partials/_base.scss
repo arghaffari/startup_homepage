@@ -61,6 +61,7 @@ h2.sub-title {
     margin: 10px;
 }
 
+
 #cross-platform-svg {
     width: 75%;
     // position: relative;
@@ -69,3 +70,279 @@ h2.sub-title {
     // right: 50%;
     // transform: translate(70%, -50%);
 }
+
+
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {  
+  position: relative;
+  
+  width:  $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0; 
+  list-style: none;
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    margin: -($item-size / 2);
+    width:  $item-size;
+    height: $item-size;
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .div-circle-container {
+        min-height: 35em;
+    }
+
+    #section-one {
+        height: 100vh;
+        padding: 50px;
+        position: relative;
+    }
+
+    .section-one-desc {
+        text-align: right;
+        padding: 25px;
+        p {
+            font-size: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .section-one-header {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .circle-container {
+        @include on-circle($item-count: 8, $circle-size: 29em, $item-size: 6em); 
+        margin: 5em auto 0;
+      //   border: solid 2px tomato;
+        animation: spin 300s linear infinite;
+      
+        img { 
+          display: block;
+          max-width: 100%;
+          filter: grayscale(85%);
+          /* border: solid 5px tomato; */
+          transition: .15s;
+          animation: spin 300s linear infinite reverse;
+           
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .div-circle-container {
+        min-height: 30em;
+    }
+
+    .section-one-header {
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .section-one-desc {
+        text-align: center;
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .section-one-desc-header {
+        font-size: 25px;
+        margin: 0 0 1em 0;
+    } 
+
+    .circle-container {
+        @include on-circle($item-count: 8, $circle-size: 25em, $item-size: 5em); 
+        margin: 5em auto 0;
+      //   border: solid 2px tomato;
+        animation: spin 300s linear infinite;
+      
+        img { 
+          display: block;
+          max-width: 100%;
+          filter: grayscale(85%);
+          /* border: solid 5px tomato; */
+          transition: .15s;
+          animation: spin 300s linear infinite reverse;
+           
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+}
+
+@media screen and (min-width: 420px) and (max-width: 700px){
+    .div-circle-container {
+        min-height: 25em;
+    }
+
+    .section-one-header {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .section-one-desc {
+        text-align: center;
+        p {
+            font-size: 17px;
+        }
+    }
+
+    .section-one-desc-header {
+        font-size: 25px;
+        margin: 0 0 1em 0;
+    } 
+
+    .circle-container {
+        @include on-circle($item-count: 8, $circle-size: 20em, $item-size: 5em); 
+        margin: 5em auto 0;
+      //   border: solid 2px tomato;
+        animation: spin 300s linear infinite;
+      
+        img { 
+          display: block;
+          max-width: 100%;
+          filter: grayscale(85%);
+          /* border: solid 5px tomato; */
+          transition: .15s;
+          animation: spin 300s linear infinite reverse;
+           
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+}
+
+
+@media screen and (max-width: 420px) and (min-width: 320px) {
+
+    .section-one-desc {
+        text-align: center;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .section-one-desc-header {
+        font-size: 22px;
+        margin: 0 0 1em 0;
+    } 
+
+    .section-one-header {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .div-circle-container {
+        min-height: 20em;
+    }
+
+    .circle-container {
+        @include on-circle($item-count: 8, $circle-size: 16em, $item-size: 4em); 
+        margin: 3em auto 0;
+      //   border: solid 2px tomato;
+        animation: spin 300s linear infinite;
+      
+        img { 
+          display: block;
+          max-width: 100%;
+          filter: grayscale(85%);
+          /* border: solid 5px tomato; */
+          transition: .15s;
+          animation: spin 300s linear infinite reverse;
+           
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 320px) {
+    
+        .section-one-desc {
+            text-align: center;
+    
+            p {
+                font-size: 12px;
+            }
+        }
+    
+        .section-one-desc-header {
+            font-size: 18px;
+            margin: 0 0 1em 0;
+        } 
+    
+        .section-one-header {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+    
+        .div-circle-container {
+            min-height: 15em;
+        }
+    
+        .circle-container {
+            @include on-circle($item-count: 8, $circle-size: 14em, $item-size: 3em); 
+            margin: 3em auto 0;
+          //   border: solid 2px tomato;
+            animation: spin 300s linear infinite;
+          
+            img { 
+              display: block;
+              max-width: 100%;
+              filter: grayscale(85%);
+              /* border: solid 5px tomato; */
+              transition: .15s;
+              animation: spin 300s linear infinite reverse;
+               
+              &:hover {
+                filter: grayscale(0);
+              }
+            }
+          }
+    }
+
+
+@keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }

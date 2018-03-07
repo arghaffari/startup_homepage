@@ -19,7 +19,7 @@ const HeaderContainer = ({headers}) => {
               <p id="header-support-phone" className="header-supports"> <FaPhone style={{margin: '0.4em'}}/> تلفن پشتیبانی: 88211202-021</p>
             </div>
           </Col>
-          <Col style={{padding: '1em'}} xs={24} sm={24} md={24} lg={12} xl={13}>
+          <Col className="menu" style={{padding: '1em'}} xs={24} sm={24} md={24} lg={12} xl={13}>
             <PageHeaders headers={headers} />
           </Col>
         </Row>

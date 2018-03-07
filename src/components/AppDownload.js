@@ -6,7 +6,7 @@ import { FaSignIn } from 'react-icons/lib/fa';
 const AppDownload = () => {
   return(
     <div id="app-download">
-      <p style={{padding: '0px', margin: '0px'}}> <FaSignIn/> رامونا</p>
+      <p style={{padding: '0px', margin: '0px'}}> <FaSignIn/>ورود</p>
     </div>
   );
 };
