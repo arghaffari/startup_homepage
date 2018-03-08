@@ -119,6 +119,22 @@ h2.sub-title {
 }
 
 @media screen and (min-width: 1200px) {
+    #section-five {
+        h1 {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    #section-three {
+        padding: 100px 50px 100px 50px;    
+    }
+
     .div-circle-container {
         min-height: 30em;
     }
@@ -126,6 +142,7 @@ h2.sub-title {
     #section-one {
         padding: 50px;
         position: relative;
+        direction: rtl;
     }
 
     .section-one-desc {
@@ -168,6 +185,18 @@ h2.sub-title {
 }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
+    #section-five {
+        h1 {
+            font-size: 17px;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
     .div-circle-container {
         min-height: 30em;
     }
@@ -180,6 +209,7 @@ h2.sub-title {
 
     .section-one-desc {
         text-align: center;
+        direction: rtl;
         p {
             font-size: 18px;
         }
@@ -212,6 +242,18 @@ h2.sub-title {
 }
 
 @media screen and (min-width: 420px) and (max-width: 700px){
+    #section-five {
+        h1 {
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 7px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
     .div-circle-container {
         min-height: 25em;
     }
@@ -224,6 +266,7 @@ h2.sub-title {
 
     .section-one-desc {
         text-align: center;
+        direction: rtl;
         p {
             font-size: 17px;
         }
@@ -257,10 +300,21 @@ h2.sub-title {
 
 
 @media screen and (max-width: 420px) and (min-width: 320px) {
+    #section-five {
+        h1 {
+            font-size: 15px;
+            margin: 0;
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+    }
 
     .section-one-desc {
         text-align: center;
-
+        direction: rtl;
         p {
             font-size: 14px;
         }
@@ -303,19 +357,30 @@ h2.sub-title {
 }
 
 @media screen and (max-width: 320px) {
-    
-        .section-one-desc {
-            text-align: center;
-    
-            p {
-                font-size: 12px;
-            }
+    #section-five {
+        h1 {
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 5px;
         }
+
+        p {
+            font-size: 10px;
+        }
+    }
     
-        .section-one-desc-header {
-            font-size: 18px;
-            margin: 0 0 1em 0;
-        } 
+    .section-one-desc {
+        text-align: center;
+        direction: rtl;
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .section-one-desc-header {
+        font-size: 18px;
+        margin: 0 0 1em 0;
+    } 
     
         .section-one-header {
             font-size: 24px;
@@ -389,3 +454,4 @@ h2.sub-title {
 .text-color-one {
     text-align: justify;
 }
+

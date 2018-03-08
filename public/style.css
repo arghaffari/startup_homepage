@@ -20239,11 +20239,20 @@ h2.sub-title {
   margin: 0 auto; }
 
 @media screen and (min-width: 1200px) {
+  #section-five h1 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px; }
+  #section-five p {
+    font-size: 14px; }
+  #section-three {
+    padding: 100px 50px 100px 50px; }
   .div-circle-container {
     min-height: 30em; }
   #section-one {
     padding: 50px;
-    position: relative; }
+    position: relative;
+    direction: rtl; }
   .section-one-desc {
     text-align: right;
     padding: 25px; }
@@ -20299,6 +20308,12 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
+  #section-five h1 {
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 8px; }
+  #section-five p {
+    font-size: 13px; }
   .div-circle-container {
     min-height: 30em; }
   .section-one-header {
@@ -20306,7 +20321,8 @@ h2.sub-title {
     text-align: center;
     font-weight: bold; }
   .section-one-desc {
-    text-align: center; }
+    text-align: center;
+    direction: rtl; }
     .section-one-desc p {
       font-size: 18px; }
   .section-one-desc-header {
@@ -20356,6 +20372,12 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (min-width: 420px) and (max-width: 700px) {
+  #section-five h1 {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 7px; }
+  #section-five p {
+    font-size: 12px; }
   .div-circle-container {
     min-height: 25em; }
   .section-one-header {
@@ -20363,7 +20385,8 @@ h2.sub-title {
     text-align: center;
     font-weight: bold; }
   .section-one-desc {
-    text-align: center; }
+    text-align: center;
+    direction: rtl; }
     .section-one-desc p {
       font-size: 17px; }
   .section-one-desc-header {
@@ -20413,8 +20436,15 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (max-width: 420px) and (min-width: 320px) {
+  #section-five h1 {
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 6px; }
+  #section-five p {
+    font-size: 11px; }
   .section-one-desc {
-    text-align: center; }
+    text-align: center;
+    direction: rtl; }
     .section-one-desc p {
       font-size: 14px; }
   .section-one-desc-header {
@@ -20470,8 +20500,15 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (max-width: 320px) {
+  #section-five h1 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px; }
+  #section-five p {
+    font-size: 10px; }
   .section-one-desc {
-    text-align: center; }
+    text-align: center;
+    direction: rtl; }
     .section-one-desc p {
       font-size: 12px; }
   .section-one-desc-header {
