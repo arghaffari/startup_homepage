@@ -15,7 +15,9 @@
 //     vertical-align: baseline;
 //     height: 100%;
 // }
-
+body, html, .ant-layout-content {
+    overflow-x: hidden;
+}
 
 h1, h2 {
     margin: 3px;
@@ -111,7 +113,7 @@ h2.sub-title {
 
 @media screen and (min-width: 1200px) {
     .div-circle-container {
-        min-height: 35em;
+        min-height: 30em;
     }
 
     #section-one {
@@ -138,7 +140,7 @@ h2.sub-title {
     }
 
     .circle-container {
-        @include on-circle($item-count: 8, $circle-size: 29em, $item-size: 6em); 
+        @include on-circle($item-count: 8, $circle-size: 24em, $item-size: 5em); 
         margin: 5em auto 0;
       //   border: solid 2px tomato;
         animation: spin 300s linear infinite;
@@ -345,3 +347,30 @@ h2.sub-title {
       transform: rotate(1turn);
     }
   }
+
+
+.ant-tooltip-inner {
+    font-family: iranyekan;
+}
+
+.ant-tooltip-open {
+    cursor: pointer;
+    border-bottom: 4px dotted blueviolet;
+}
+
+#section-two {
+    padding: 50px;
+}
+
+.ant-list-item-meta-content {
+    margin: 5px;
+}
+
+.ant-list-item-meta-description {
+    font-family: iranyekan;
+}
+
+.avatar {
+    // color: $orange-primary;
+    background-color: $rich-black-primary;
+}

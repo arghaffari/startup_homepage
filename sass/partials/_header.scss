@@ -1,16 +1,23 @@
 @media screen and (min-width: 1200px) {
-    $header-font-size: 20px;
+    $header-font-size: 17px;
 
     #app-download {
         border-radius: 5px;
-        max-width: 150px;
+        
         text-align: center;
         color: #fff;
         padding: 5px;
+        text-align: center;
+        vertical-align: middle;
         background: #3ecf8e;
         text-shadow: 0 1px 3px rgba(36,180,126,.4);
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+        height: 40px;
+        max-width: 120px;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
 
         p {
             font-size: $header-font-size - 2;
@@ -64,9 +71,8 @@
 
 
 @media screen and (max-width: 1200px) and (min-width: 700px) {
-    $header-font-size: 18px;
+    $header-font-size: 16px;
     #app-download {
-        border-radius: 5px;
         max-width: 150px;
         text-align: center;
         color: #fff;
@@ -75,6 +81,11 @@
         text-shadow: 0 1px 3px rgba(36,180,126,.4);
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+        height: 40px;
+        max-width: 120px;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
 
         p {
             font-size: $header-font-size - 2;
@@ -132,7 +143,7 @@
 }
 
 @media screen and (max-width: 700px) and (min-width: 420px) {
-    $header-font-size: 18px;
+    $header-font-size: 15px;
 
     .menu {
         text-align: center;
@@ -140,7 +151,6 @@
 
     #app-download {
         border-radius: 5px;
-        max-width: 150px;
         text-align: center;
         color: #fff;
         margin: 0 auto;
@@ -149,6 +159,11 @@
         text-shadow: 0 1px 3px rgba(36,180,126,.4);
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+        height: 40px;
+        max-width: 120px;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
 
         p {
             font-size: $header-font-size - 2;
@@ -212,7 +227,6 @@
 
     #app-download {
         border-radius: 5px;
-        max-width: 150px;
         text-align: center;
         color: #fff;
         margin: 0 auto;
@@ -221,6 +235,11 @@
         text-shadow: 0 1px 3px rgba(36,180,126,.4);
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+        height: 40px;
+        max-width: 120px;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
 
         p {
             font-size: $header-font-size - 2;
@@ -277,7 +296,7 @@
 
 
 @media screen and (max-width: 320px) {
-    $header-font-size: 12px;
+    $header-font-size: 13px;
 
     .menu {
         text-align: center;
@@ -285,7 +304,6 @@
 
     #app-download {
         border-radius: 5px;
-        max-width: 150px;
         text-align: center;
         color: #fff;
         margin: 0 auto;
@@ -294,6 +312,11 @@
         text-shadow: 0 1px 3px rgba(36,180,126,.4);
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+        height: 40px;
+        max-width: 120px;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
 
         p {
             font-size: $header-font-size - 2;
