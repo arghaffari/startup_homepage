@@ -20246,7 +20246,8 @@ h2.sub-title {
   #section-five p {
     font-size: 14px; }
   #section-three {
-    padding: 100px 50px 100px 50px; }
+    padding: 100px 50px 100px 50px;
+    height: 90vh; }
   .div-circle-container {
     min-height: 30em; }
   #section-one {
@@ -20306,6 +20307,15 @@ h2.sub-title {
       animation: spin 300s linear infinite reverse; }
       .circle-container img:hover {
         filter: grayscale(0); } }
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  #section-three {
+    height: 100vh; } }
+
+@media screen and (min-width: 700px) and (max-width: 1200px) and (min-width: 770px) {
+  #section-three {
+    height: 60vh;
+    padding: 20px 50px 100px 50px; } }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   #section-five h1 {
@@ -20372,6 +20382,8 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (min-width: 420px) and (max-width: 700px) {
+  #section-three {
+    height: 90vh; }
   #section-five h1 {
     font-size: 16px;
     margin: 0;
@@ -20436,6 +20448,9 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (max-width: 420px) and (min-width: 320px) {
+  #section-three {
+    height: 80vh;
+    min-height: 600px; }
   #section-five h1 {
     font-size: 15px;
     margin: 0;
@@ -20500,6 +20515,9 @@ h2.sub-title {
         filter: grayscale(0); } }
 
 @media screen and (max-width: 320px) {
+  #section-three {
+    height: 80vh;
+    min-height: 600px; }
   #section-five h1 {
     font-size: 14px;
     margin: 0;
@@ -20591,6 +20609,10 @@ h2.sub-title {
 
 .text-color-one {
   text-align: justify; }
+
+#section-five {
+  direction: rtl;
+  padding: 20px; }
 
 @media screen and (min-width: 1200px) {
   #app-download {

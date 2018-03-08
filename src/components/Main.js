@@ -4,6 +4,7 @@ import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
 import SectionThree from './SectionThree';
 import SectionFour from './SectionFour';
+import FooterContainer from './FooterContainer';
 
 
 
@@ -14,6 +15,7 @@ const Main = ({mainContent}) => {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <FooterContainer />
     </div>
   );
 };

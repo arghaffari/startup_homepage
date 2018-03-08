@@ -86,7 +86,6 @@ class App extends React.Component {
         <Layout>
           <HeaderContainer headers={this.getHeaders()} />
           <Content><Main mainContent={this.getMainContents()}/></Content>
-          <Footer><FooterContainer /></Footer>
         </Layout>
         <div className="backg" />
       </div>

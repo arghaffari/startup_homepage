@@ -69,8 +69,8 @@ class SectionTwo extends React.Component {
             </div>
           </Col>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-            <div style={{textAlign: 'center', position: 'relative'}}>
-              <img id="desc-img" src="/svg/pos.svg" style={{width: '80%', maxWidth: '500px', margin: '0 auto', padding: '20px'}}/>
+            <div id="desc-img" style={{textAlign: 'center', position: 'relative'}}>
+              <img  src="/svg/pos.svg" style={{width: '80%', maxWidth: '500px', margin: '0 auto', padding: '20px'}}/>
             </div>
           </Col>
         </Row>        

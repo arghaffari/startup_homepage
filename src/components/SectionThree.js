@@ -14,29 +14,19 @@ class SectionThree extends React.Component {
             </div>
           </Col>
           <Col style={{textAlign: 'center'}} xs={24} sm={24} md={8} lg={10} xl={10}>
-          <Button type="primary" icon="download" size={'large'}>Download</Button>
-            <div id="apps-decription">
-              <div id="applinks">
-                
-
-                <div className="applink">
-                  <span className="applink-span">کافه بازار</span>
-                  <FaAndroid size={35} style={{color: 'grey'}}/>
-                </div>
-                <div className="applink">
-                  <span className="applink-span">مستقیم</span>
-                  <FaDownload size={35} style={{color: 'grey'}}/>
-                </div>
-                <div className="applink">
-                  <span className="applink-span">تحت وب</span>
-                  <FaCloud size={35} style={{color: 'grey'}}/>
-                </div>
-              </div>
-            </div>
+            <ul style={{listStyleType: 'none', transform: 'translate(0, 20%)'}}>
+              <li style={{margin: '10px'}}>
+                <Button style={{width: '205px'}} type="primary" icon="android" size={'large'}>اندروید</Button>
+              </li>
+              <li style={{margin: '10px'}}>
+                <Button style={{width: '205px'}} type="primary" icon="download" size={'large'}>دانلود مستقیم اندروید</Button>
+              </li>
+              <li style={{margin: '10px'}}>
+                <Button style={{width: '205px'}} type="primary" icon="cloud" size={'large'}>تحت وب</Button> 
+              </li>
+            </ul>
           </Col>
         </Row>
-        
-        
       </div>
     );
   }
