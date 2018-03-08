@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderContainer from './HeaderContainer';
+import FooterContainer from './FooterContainer';
 import * as api from '../api';
 import PropTypes from 'prop-types';
 import Main from './Main';
@@ -85,7 +86,7 @@ class App extends React.Component {
         <Layout>
           <HeaderContainer headers={this.getHeaders()} />
           <Content><Main mainContent={this.getMainContents()}/></Content>
-          <Footer>Footer</Footer>
+          <Footer><FooterContainer /></Footer>
         </Layout>
         <div className="backg" />
       </div>

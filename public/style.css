@@ -20208,7 +20208,12 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
 
 /*# sourceMappingURL=antd.css.map*/
 body, html, .ant-layout-content {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  direction: ltr; }
+
+.ant-layout {
+  background-color: #fff;
+  direction: rtl; }
 
 h1, h2 {
   margin: 3px;
@@ -20230,6 +20235,7 @@ h2.sub-title {
 
 #cross-platform-svg {
   width: 75%;
+  max-width: 480px;
   margin: 0 auto; }
 
 @media screen and (min-width: 1200px) {
@@ -20542,6 +20548,12 @@ h2.sub-title {
 
 .avatar {
   background-color: #45455E; }
+
+#app-features {
+  direction: rtl; }
+
+.text-color-one {
+  text-align: justify; }
 
 @media screen and (min-width: 1200px) {
   #app-download {

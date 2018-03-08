@@ -14,7 +14,7 @@ const HeaderContainer = ({headers}) => {
           <Col style={{padding: '0.5em'}}  xs={24} sm={8} md={8} lg={4} xl={4}>
             <AppDownload />
           </Col>
-          <Col style={{padding: '1em'}} xs={24} sm={16} md={16} lg={8} xl={7}>
+          <Col style={{padding: '1em', textAlign: 'right', direction: 'rtl'}} xs={24} sm={16} md={16} lg={8} xl={7}>
             <div id="header-support" >
               <p id="header-support-phone" className="header-supports"> <FaPhone style={{margin: '0.4em'}}/> تلفن پشتیبانی: 88211202-021</p>
             </div>
