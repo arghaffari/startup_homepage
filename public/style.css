@@ -20614,6 +20614,26 @@ h2.sub-title {
   direction: rtl;
   padding: 20px; }
 
+.pre-order {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  background-color: green; }
+  .pre-order p {
+    font-size: 20px;
+    color: gold;
+    font-weight: bold; }
+
+.Countdown {
+  direction: rtl; }
+  .Countdown .Countdown-col {
+    margin: 10px; }
+    .Countdown .Countdown-col strong {
+      margin: 5px;
+      color: white; }
+    .Countdown .Countdown-col span {
+      color: white; }
+
 @media screen and (min-width: 1200px) {
   #app-download {
     border-radius: 5px;

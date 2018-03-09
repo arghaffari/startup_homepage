@@ -14,13 +14,20 @@ import {
 } from 'react-icons/lib/md/';
 import { Row, Col } from 'antd';
 
-
-if(typeof window !== 'undefined') {
-  document.addEventListener('scroll', (e) => {
+const getScreenSize = () => {
+  if(typeof window !== 'undefined') {
     var size = {
       width: window.innerWidth || document.body.clientWidth,
       height: window.innerHeight || document.body.clientHeight
     };
+  }
+  return size;
+};
+
+
+if(typeof window !== 'undefined') {
+  document.addEventListener('scroll', (e) => {
+    let size = getScreenSize();
     var appFeatures =  document.getElementById('app-features');
     var descImg =  document.getElementById('desc-img');
     var dim = appFeatures.getBoundingClientRect();
@@ -45,7 +52,10 @@ if(typeof window !== 'undefined') {
     }
     
   }, true);
+
 }
+
+
 
 class SectionTwo extends React.Component {
   

@@ -488,3 +488,30 @@ h2.sub-title {
     padding: 20px;
 }
 
+.pre-order {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: green;
+
+    p {
+        font-size: 20px;
+        color: gold;
+        font-weight: bold;
+    }
+}
+
+.Countdown {
+    direction: rtl;
+    .Countdown-col {
+        margin: 10px;
+        strong {
+            margin: 5px;
+            color: white;
+        }
+        span {
+            color: white;
+        }
+    }
+}
+
