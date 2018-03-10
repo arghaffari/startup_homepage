@@ -1,8 +1,10 @@
 import React from 'react';
 import HeaderContainer from './HeaderContainer';
+import FooterContainer from './FooterContainer';
 import * as api from '../api';
 import PropTypes from 'prop-types';
 import Main from './Main';
+import PreOrder from './PreOrder';
 import { Layout } from 'antd';
 const { Header, Footer, Content } = Layout;
 
@@ -82,10 +84,10 @@ class App extends React.Component {
   render(){
     return (
       <div>
+        <PreOrder />
         <Layout>
           <HeaderContainer headers={this.getHeaders()} />
           <Content><Main mainContent={this.getMainContents()}/></Content>
-          <Footer>Footer</Footer>
         </Layout>
         <div className="backg" />
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Tooltip } from 'antd';
 import { FaAngleDoubleLeft, FaGift } from 'react-icons/lib/fa';
 import { } from 'react-icons/lib/md/';
 import Subscription from './Subscription';
@@ -13,7 +13,10 @@ class SectionOne extends React.Component {
       <div id="section-one">
         <Row>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <h1 className="section-one-header"><b>دخلتو</b> همیشه همراهته!</h1>
+            <h1 className="section-one-header"><b>دَخْلِتو</b> همیشه همراهته!</h1>
+            <p style={{fontSize: '18px', textAlign: 'center'}}>
+              <b>دخلتو</b> نرم افزار پیشرفته <Tooltip placement="bottom" title="صندوق فروشگاهی" >فروشگاهی</Tooltip>
+            </p>
           </Col>
         </Row>
         <Row>
@@ -40,11 +43,6 @@ class SectionOne extends React.Component {
               <p><FaAngleDoubleLeft />اطلاعاتت رو همیشه حتی تو گوشیت داشته باشی</p>
               <p><FaAngleDoubleLeft />کارمندها وشعب فروشگاه هاتو بیشتر کنی</p>
               <p><FaAngleDoubleLeft  />و بدونی استفاده از دخلتو انقدر سادست که نیاز به هیچ دانش تخصصی نداری ...</p>
-              <div className="subscription">
-                <Card title="از تخفیف‌ها و پیشنهادهای ویژه ما با خبر شو!"  style={{width: '100% !important', margin: '0 auto'}}>
-                  <Subscription />
-                </Card>
-              </div>
             </div>
           </Col>
         </Row>

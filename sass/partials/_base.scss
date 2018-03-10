@@ -15,7 +15,15 @@
 //     vertical-align: baseline;
 //     height: 100%;
 // }
+body, html, .ant-layout-content {
+    overflow-x: hidden;
+    direction: ltr;
+}
 
+.ant-layout {
+    background-color: $white;
+    direction: rtl;
+}
 
 h1, h2 {
     margin: 3px;
@@ -63,13 +71,13 @@ h2.sub-title {
 
 
 #cross-platform-svg {
-    width: 75%;
-    // position: relative;
-    // top: 50%;
+    width: 80%;
+    max-width: 500px;
     margin: 0 auto;
-    // right: 50%;
-    // transform: translate(70%, -50%);
+    padding: 10px;
 }
+
+
 
 
 /// Mixin to place items on a circle
@@ -111,25 +119,40 @@ h2.sub-title {
 
 @media screen and (min-width: 1200px) {
     .subscription {
-        width: 70%;
+        width: 40%;
         text-align: center;
-        margin: 0;
-        float: right;
+        margin: 0 auto;
     }
     .ant-card-head-title {
         font-family: iranyekan;
-        color: green;
-        font-size: 18px;
+        color: blueviolet;
+        font-size: 25px;
         font-weight: bold;
+        }
+    #section-five {
+        h1 {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    #section-three {
+        height: 70vh;    
     }
 
     .div-circle-container {
-        min-height: 35em;
+        min-height: 30em;
     }
 
     #section-one {
         padding: 50px;
         position: relative;
+        direction: rtl;
     }
 
     .section-one-desc {
@@ -151,7 +174,7 @@ h2.sub-title {
     }
 
     .circle-container {
-        @include on-circle($item-count: 8, $circle-size: 29em, $item-size: 6em); 
+        @include on-circle($item-count: 8, $circle-size: 24em, $item-size: 5em); 
         margin: 5em auto 0;
       //   border: solid 2px tomato;
         animation: spin 300s linear infinite;
@@ -180,9 +203,31 @@ h2.sub-title {
 
     .ant-card-head-title {
         font-family: iranyekan;
-        color: green;
-        font-size: 17px;
+        color: blueviolet;
+        font-size: 23px;
         font-weight: bold;
+        }
+    #section-three {
+        height: 100vh;    
+    }
+
+    @media screen and (min-width: 770px){
+        #section-three {
+            height: 60vh;    
+            padding: 20px 50px 100px 50px;
+        }
+    }
+
+    #section-five {
+        h1 {
+            font-size: 17px;
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 13px;
+        }
     }
 
     .div-circle-container {
@@ -197,6 +242,7 @@ h2.sub-title {
 
     .section-one-desc {
         text-align: center;
+        direction: rtl;
         p {
             font-size: 18px;
         }
@@ -237,9 +283,24 @@ h2.sub-title {
 
     .ant-card-head-title {
         font-family: iranyekan;
-        color: green;
-        font-size: 15px;
+        color: blueviolet;
+        font-size: 20px;
         font-weight: bold;
+        }
+    #section-three {
+        height: 90vh;    
+    }
+    
+    #section-five {
+        h1 {
+            font-size: 16px;
+            margin: 0;
+            margin-bottom: 7px;
+        }
+
+        p {
+            font-size: 12px;
+        }
     }
 
     .div-circle-container {
@@ -254,6 +315,7 @@ h2.sub-title {
 
     .section-one-desc {
         text-align: center;
+        direction: rtl;
         p {
             font-size: 17px;
         }
@@ -295,13 +357,30 @@ h2.sub-title {
 
     .ant-card-head-title {
         font-family: iranyekan;
-        color: green;
-        font-size: 13px;
+        color: blueviolet;
+        font-size: 17px;
+        font-weight: bold;
+       }
+    #section-three {
+        height: 80vh;   
+        min-height: 600px; 
+    }
+
+    #section-five {
+        h1 {
+            font-size: 15px;
+            margin: 0;
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 11px;
+        }
     }
 
     .section-one-desc {
         text-align: center;
-
+        direction: rtl;
         p {
             font-size: 14px;
         }
@@ -352,8 +431,45 @@ h2.sub-title {
     
     .ant-card-head-title {
         font-family: iranyekan;
-        color: green;
+        color: blueviolet;
+        font-size: 14px;
+        font-weight: bold;
     }
+    #section-three {
+        height: 80vh; 
+        min-height: 600px;   
+    }
+    
+    #section-five {
+        h1 {
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+    
+    .section-one-desc {
+        text-align: center;
+        direction: rtl;
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .section-one-desc-header {
+        font-size: 18px;
+        margin: 0 0 1em 0;
+    } 
+    
+        .section-one-header {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
     
     .section-one-desc {
         text-align: center;
@@ -411,3 +527,88 @@ h2.sub-title {
     margin: 5px;
 }
 
+
+.ant-tooltip-inner {
+    font-family: iranyekan;
+}
+
+.ant-tooltip-open {
+    cursor: pointer;
+    border-bottom: 4px dotted blueviolet;
+}
+
+#section-two {
+    padding: 50px;
+}
+
+.ant-list-item-meta-content {
+    margin: 5px;
+}
+
+.ant-list-item-meta-description {
+    font-family: iranyekan;
+}
+
+.avatar {
+    // color: $orange-primary;
+    background-color: $rich-black-primary;
+}
+
+#app-features {
+    direction: rtl;
+}
+
+.text-color-one {
+    text-align: justify;
+}
+
+#section-five {
+    direction: rtl;
+    padding: 20px;
+}
+
+.pre-order {
+    height: inherit;
+    width: 100%;
+    text-align: center;
+    background-color: $rich-black-primary;
+    padding: 20px;
+
+    p {
+        font-size: 23px;
+        color: #FFE97B;
+        font-weight: bold;
+    }
+}
+
+.Countdown {
+    direction: rtl;
+    .Countdown-col {
+        margin: 10px;
+        strong {
+            margin: 5px;
+            color: white;
+        }
+        span {
+            color: white;
+        }
+    }
+}
+
+#section-three {
+    position: relative;
+}
+
+#section-one {
+    background-color: $white-smoke;
+}
+
+.subscription {
+    height: 50vh;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    h1 {
+        margin: 20px;
+    }
+}
