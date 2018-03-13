@@ -4,7 +4,8 @@ import FooterContainer from './FooterContainer';
 import * as api from '../api';
 import PropTypes from 'prop-types';
 import Main from './Main';
-import PreOrder from './PreOrder';
+import PreOrderAnnounce from './PreOrderAnnounce';
+import PreOrder from './landing-pages/PreOrder';
 import { Layout } from 'antd';
 const { Header, Footer, Content } = Layout;
 
@@ -27,7 +28,7 @@ class App extends React.Component {
   componentDidMount(){
     onPopState((event) => {
       this.setState({
-        // currentHeaderId: (event.state || {}).currentHeaderId
+        currentContentId: (event.state || {}).currentContentId
       });      
     });
   }
@@ -37,9 +38,8 @@ class App extends React.Component {
   }
 
   fetchHeaderList = () => {
-
     pushState({
-      currentHeaderId: null
+      currentContentId: null
     },
     '/'
     );
@@ -53,20 +53,19 @@ class App extends React.Component {
 	
   };
 
-  fetchContest = (headerId) => {
-
+  fetchContest = (contentId) => {
     pushState({
-      currentHeaderId: headerId
+      currentContentId: contentId
     },
-    '/header/'+ headerId
+    '/pages/landing-page/'+ contentId
     );
 
-    api.fetchContest(headerId).then(header => {
+    api.fetchContent(contentId).then(content => {
       this.setState({
-        currentContestId: header.id,
+        currentContentId: content.id,
         contests: {
-          ...this.state.headers,
-          [header.id]: header
+          ...this.state.content,
+          [content.id]: content
         }
       });
     });
@@ -81,13 +80,29 @@ class App extends React.Component {
     return this.state.main;
   }
 
+
+  currentContent(){
+    if (this.state.currentContentId) {
+      // return <Contest {...this.currentContest()} contestListClick={this.fetchContestList}/>;
+      return <Content><PreOrder/></Content>;
+    }
+
+    // return <ContestList 
+    //   onContestClick={this.fetchContest}
+    //   contests={this.state.contests}/>;
+    if(this.state.isMainPage){
+      return <Content><Main mainContent={this.getMainContents()}/></Content>;
+    }
+    
+  }
+
   render(){
     return (
       <div>
-        <PreOrder />
         <Layout>
+          <PreOrderAnnounce />
           <HeaderContainer headers={this.getHeaders()} />
-          <Content><Main mainContent={this.getMainContents()}/></Content>
+          {this.currentContent()}
         </Layout>
         <div className="backg" />
       </div>

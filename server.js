@@ -28,8 +28,8 @@ app.use('/api', apiRouter);
 
 import serverRender from './serverRender';
 
-app.get(['/', '/contest/:contestId'], (req, res) => {
-  serverRender(req.params.contestId)
+app.get(['/', '/pages/landing-page/:content'], (req, res) => {
+  serverRender(req.params.content)
     .then(({ initialMarkup, initialData }) => {
       res.render('index', {initialMarkup, initialData});
     })
