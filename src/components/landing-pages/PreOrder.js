@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Main from './pre-order/Main';
 
 class PreOrder extends Component {
   render(){
     return(
       <div>
-        <h1>Alirefdsfs***********************************************************za</h1>
+        <Main />
       </div>
     );
   }
