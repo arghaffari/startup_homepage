@@ -4,34 +4,51 @@ import config from './config';
 import ReactDOMServer from 'react-dom/server';
 import App from './src/components/App';
 
-const getApiUrl = headerId =>{
-//   console.log(config.serverUrl + '/api/contests/' + headerId);
-//   if(headerId){
-//     return config.serverUrl + '/api/contests/' + headerId;
-//   }
-  return config.serverUrl + '/api/static/main';
+const getApiUrl = content =>{
+  console.log(config.serverUrl + '/api/static/main/landing-pages/' + content);
+  if(content){
+    return config.serverUrl + '/api/static/main/landing-pages/' + content;
+  }
+  return config.serverUrl + '/api/static/main/headers';
 };
 
-const getInitialData = (headerId, apiData) => {
-  // if(headerId){
-  //   return {
-  //     currentheaderId: apiData.id,
-  //     contests: {
-  //       [apiData.id]: apiData
-  //     }
-  //   };
-  // }
+const getInitialData = (content, apiData) => {
+  if(content){
+    if(content === 'pre-order'){
+      let preOrder = apiData['content'];
+      let currentContentId;
+      console.log(preOrder);
+      if(!preOrder.id){
+        currentContentId = null;
+      } else {
+        currentContentId = preOrder.id;
+      }
+      let data = {
+        currentContentId,
+        preOrder,
+        headers: apiData.headers
+      };
+      console.log(data);
+      return data;
+    }
+    return {
+      headers: apiData.headers,
+      currentContentId: null,
+      preOrder: null
+    };
+  }
 
   return {
-    headers: apiData.headers
+    headers: apiData.headers,
+    isMainPage: true
   };
 };
 
 
-const serverRender = (headerId) => {
-  return axios.get(getApiUrl(headerId))
+const serverRender = (content) => {
+  return axios.get(getApiUrl(content))
     .then(res => {
-      const initialData = getInitialData(headerId, res.data);
+      const initialData = getInitialData(content, res.data);
       return {
         initialMarkup: ReactDOMServer.renderToString(
           <App initialData={initialData} />

@@ -6,7 +6,7 @@ export const fetchHeaderList = () => {
     .then(res => res.data.headers);
 };
 
-export const fetchHeader = headerId => {
-  return axios.get('/api/static/main/' + headerId)
+export const fetchContent = contentId => {
+  return axios.get('/api/static/main/landing-pages/' + contentId)
     .then(res => res.data);
 };

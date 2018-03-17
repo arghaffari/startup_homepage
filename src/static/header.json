@@ -27,5 +27,15 @@
         "persianTitle": "تماس با ما",
         "englishTitle": "Contact Us"
       }
-    ]
+    ],
+    "features": [
+      {}
+    ],
+    "landingPages": {
+      "pre-order": {
+        "id": 1,
+        "enTitle": "Pre Ordering",
+        "faTitle": "پیشفروش نرم افزار دخلتو"
+      }
+    }
   }
