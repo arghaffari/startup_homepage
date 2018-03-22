@@ -6,6 +6,17 @@ import PropTypes from 'prop-types';
 
 
 class PreOrderAnnounce extends Component {
+  static propTypes = {
+    hasText: PropTypes.bool.isRequired,
+    fontSize: PropTypes.string,
+    bgColor: PropTypes.string,
+    textColor: PropTypes.string,
+  }
+
+  static defaultProps = {
+    hasText: true,
+  }
+
   state = {
     endpoint: config.serverUrl,
     response: 'false',
@@ -13,6 +24,10 @@ class PreOrderAnnounce extends Component {
     hours: 0,
     min: 0,
     sec: 0,
+    hasText: this.props.hasText,
+    fontSize: this.props.fontSize,
+    bgColor: this.props.bgColor,
+    textColor: this.props.textColor,
   }
 
   componentDidMount() {
@@ -86,41 +101,51 @@ class PreOrderAnnounce extends Component {
     return value;
   }
 
+  hasText(){
+    if(this.state.hasText){
+      return <p>حداقل 80٪ تخفیف پیش فروش دخلتو فقط تاپایان فروردین و به تعداد محدود</p>;
+    }
+  }
+
+  textStyle(){
+    return {color: this.state.textColor};
+  }
+
   render() {
     const countDown = this.state;
     return (
-      <div className="pre-order">
-        <p>حداقل 80٪ تخفیف پیش فروش دخلتو فقط تاپایان فروردین و به تعداد محدود</p>
+      <div className="pre-order" style={{fontSize: this.state.fontSize, backgroundColor: this.state.bgColor}}>
+        {this.hasText()}
         <div style={{ textAlign: 'center' }}>
           {this.state.response
             ? 
             <div className="Countdown">
               <span className="Countdown-col">
                 <span className="Countdown-col-element">
-                  <strong>{this.addLeadingZeros(countDown.days)}</strong>
-                  <span>{countDown.days === 1 ? 'روز' : 'روز'}</span>
+                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.days)}</strong>
+                  <span  style={this.textStyle()}>{countDown.days === 1 ? 'روز' : 'روز'}</span>
                 </span>
               </span>
 
               <span className="Countdown-col">
                 <span className="Countdown-col-element">
-                  <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-                  <span>ساعت</span>
+                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.hours)}</strong>
+                  <span style={this.textStyle()}>ساعت</span>
                 </span>
               </span>
 
 
               <span className="Countdown-col">
                 <span className="Countdown-col-element">
-                  <strong>{this.addLeadingZeros(countDown.min)}</strong>
-                  <span>دقیقه</span>
+                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.min)}</strong>
+                  <span style={this.textStyle()}>دقیقه</span>
                 </span>
               </span>
 
               <span className="Countdown-col">
                 <span className="Countdown-col-element">
-                  <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-                  <span>ثانیه</span>
+                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.sec)}</strong>
+                  <span style={this.textStyle()}>ثانیه</span>
                 </span>
               </span>
             </div>
@@ -130,6 +155,7 @@ class PreOrderAnnounce extends Component {
     );
   }
 }
+
 
 
 export default PreOrderAnnounce;

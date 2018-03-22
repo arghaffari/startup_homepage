@@ -20315,7 +20315,30 @@ h2.sub-title {
       transition: .15s;
       animation: spin 300s linear infinite reverse; }
       .circle-container img:hover {
-        filter: grayscale(0); } }
+        filter: grayscale(0); }
+  .pre-order-main-desc {
+    text-align: right;
+    padding: 40px; }
+    .pre-order-main-desc p {
+      text-align: right; }
+    .pre-order-main-desc p:nth-child(1) {
+      font-size: 22px; }
+    .pre-order-main-desc p:nth-child(2) {
+      font-size: 28px; }
+    .pre-order-main-desc p:nth-child(3) {
+      font-size: 40px;
+      color: green;
+      font-weight: bold; }
+    .pre-order-main-desc p:nth-child(4) {
+      font-size: 22px;
+      font-weight: bold; }
+      .pre-order-main-desc p:nth-child(4) b {
+        font-size: 24px; }
+    .pre-order-main-desc p:nth-child(5) b {
+      font-size: 22px; }
+    .pre-order-main-desc p:nth-child(6) b {
+      color: green;
+      font-size: 24px; } }
 
 @media screen and (min-width: 700px) and (max-width: 1200px) {
   .subscription {
@@ -20397,7 +20420,35 @@ h2.sub-title {
       transition: .15s;
       animation: spin 300s linear infinite reverse; }
       .circle-container img:hover {
-        filter: grayscale(0); } }
+        filter: grayscale(0); }
+  .pre-order-main-desc {
+    text-align: right;
+    padding: 20px; }
+    .pre-order-main-desc p {
+      text-align: right; } }
+    @media screen and (min-width: 700px) and (max-width: 1200px) and (max-width: 1000px) {
+      .pre-order-main-desc p {
+        text-align: center; } }
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .pre-order-main-desc p:nth-child(1) {
+      font-size: 21px; }
+    .pre-order-main-desc p:nth-child(2) {
+      font-size: 27px; }
+    .pre-order-main-desc p:nth-child(3) {
+      font-size: 39px;
+      color: green;
+      font-weight: bold; }
+    .pre-order-main-desc p:nth-child(4) {
+      font-size: 21px;
+      font-weight: bold; }
+      .pre-order-main-desc p:nth-child(4) b {
+        font-size: 23px; }
+    .pre-order-main-desc p:nth-child(5) b {
+      font-size: 21px; }
+    .pre-order-main-desc p:nth-child(6) b {
+      color: green;
+      font-size: 23px; } }
 
 @media screen and (min-width: 420px) and (max-width: 700px) {
   .subscription {
@@ -20472,7 +20523,30 @@ h2.sub-title {
       transition: .15s;
       animation: spin 300s linear infinite reverse; }
       .circle-container img:hover {
-        filter: grayscale(0); } }
+        filter: grayscale(0); }
+  .pre-order-main-desc {
+    text-align: center;
+    padding: 10px; }
+    .pre-order-main-desc p {
+      text-align: center; }
+    .pre-order-main-desc p:nth-child(1) {
+      font-size: 18px; }
+    .pre-order-main-desc p:nth-child(2) {
+      font-size: 24px; }
+    .pre-order-main-desc p:nth-child(3) {
+      font-size: 36px;
+      color: green;
+      font-weight: bold; }
+    .pre-order-main-desc p:nth-child(4) {
+      font-size: 18px;
+      font-weight: bold; }
+      .pre-order-main-desc p:nth-child(4) b {
+        font-size: 20px; }
+    .pre-order-main-desc p:nth-child(5) b {
+      font-size: 18px; }
+    .pre-order-main-desc p:nth-child(6) b {
+      color: green;
+      font-size: 20px; } }
 
 @media screen and (max-width: 420px) and (min-width: 320px) {
   .subscription {
@@ -20548,7 +20622,30 @@ h2.sub-title {
       transition: .15s;
       animation: spin 300s linear infinite reverse; }
       .circle-container img:hover {
-        filter: grayscale(0); } }
+        filter: grayscale(0); }
+  .pre-order-main-desc {
+    text-align: center;
+    padding: 5px; }
+    .pre-order-main-desc p {
+      text-align: center; }
+    .pre-order-main-desc p:nth-child(1) {
+      font-size: 15px; }
+    .pre-order-main-desc p:nth-child(2) {
+      font-size: 21px; }
+    .pre-order-main-desc p:nth-child(3) {
+      font-size: 33px;
+      color: green;
+      font-weight: bold; }
+    .pre-order-main-desc p:nth-child(4) {
+      font-size: 15px;
+      font-weight: bold; }
+      .pre-order-main-desc p:nth-child(4) b {
+        font-size: 17px; }
+    .pre-order-main-desc p:nth-child(5) b {
+      font-size: 15px; }
+    .pre-order-main-desc p:nth-child(6) b {
+      color: green;
+      font-size: 17px; } }
 
 @media screen and (max-width: 320px) {
   .subscription {
@@ -20708,6 +20805,39 @@ h2.sub-title {
   padding: 10px; }
   .subscription h1 {
     margin: 20px; }
+
+.blur {
+  background: url("images/shop2.jpeg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(50px);
+  position: absolute;
+  height: 55vh;
+  width: 100vw; }
+
+.padding {
+  padding: 20px; }
+
+.text-align-right {
+  text-align: right; }
+
+.ant-btn, .ant-btn-primary {
+  font-family: iranyekan; }
+
+.ant-input {
+  text-align: right;
+  -moz-appearance: textfield; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+.pre-order-main {
+  min-height: 100vh;
+  overflow: hidden; }
 
 @media screen and (min-width: 1200px) {
   #app-download {
@@ -20988,6 +21118,16 @@ h2.sub-title {
 
 header.wrap {
   background-color: #EAFFFF; }
+
+#pre-order-main {
+  height: 100vh;
+  background: url("images/shop2.jpeg") no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+  #pre-order-main p {
+    text-align: right;
+    margin: 10px;
+    font-size: 20px; }
 
 #apps-decription {
   padding: 20px; }

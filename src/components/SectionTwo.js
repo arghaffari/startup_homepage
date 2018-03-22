@@ -30,27 +30,28 @@ if(typeof window !== 'undefined') {
     let size = getScreenSize();
     var appFeatures =  document.getElementById('app-features');
     var descImg =  document.getElementById('desc-img');
-    var dim = appFeatures.getBoundingClientRect();
-    var descImageH = descImg.getBoundingClientRect();
-
-    if(size.width > 1000){
-      if((dim.top <= 0) && (dim.bottom >= descImageH.height)){
-        descImg.style.position = 'relative';
-        descImg.style.top = Math.abs(dim.top) + 'px';
-      } 
-      else if ((dim.top <= 0) && (dim.bottom <= descImageH.height)) {
-        descImg.style.position = 'relative';
-        descImg.style.top = (dim.height - descImageH.height) + 'px';
-      } else if((dim.top >= 0) && (dim.bottom >= 0)) {
+    if(appFeatures != null && descImg != null){
+      var dim = appFeatures.getBoundingClientRect();
+      var descImageH = descImg.getBoundingClientRect();
+    
+      if(size.width > 1000){
+        if((dim.top <= 0) && (dim.bottom >= descImageH.height)){
+          descImg.style.position = 'relative';
+          descImg.style.top = Math.abs(dim.top) + 'px';
+        } 
+        else if ((dim.top <= 0) && (dim.bottom <= descImageH.height)) {
+          descImg.style.position = 'relative';
+          descImg.style.top = (dim.height - descImageH.height) + 'px';
+        } else if((dim.top >= 0) && (dim.bottom >= 0)) {
+          descImg.style.position = 'relative';
+          descImg.style.top = 0;
+        }
+      } else {
         descImg.style.position = 'relative';
         descImg.style.top = 0;
-      }
-    } else {
-      descImg.style.position = 'relative';
-      descImg.style.top = 0;
 
+      }
     }
-    
   }, true);
 
 }
