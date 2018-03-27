@@ -16,12 +16,12 @@ import { Row, Col } from 'antd';
 
 const getScreenSize = () => {
   if(typeof window !== 'undefined') {
-    var size = {
+    window.windowSize = {
       width: window.innerWidth || document.body.clientWidth,
       height: window.innerHeight || document.body.clientHeight
     };
   }
-  return size;
+  return window.windowSize;
 };
 
 

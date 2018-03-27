@@ -51,11 +51,16 @@ class PreOrderAnnounce extends Component {
       }, 1000);
     }
     );
+    
   }
 
   componentWillUnmount() {
     this.stop();
   }
+
+  // shouldComponentUpdate(){
+  //   this.setState({fontSize: this.props.fontSize});
+  // }
 
   calculateCountdown(endDate) {
     if(endDate.sec > 0){
@@ -114,7 +119,7 @@ class PreOrderAnnounce extends Component {
   render() {
     const countDown = this.state;
     return (
-      <div className="pre-order" style={{fontSize: this.state.fontSize, backgroundColor: this.state.bgColor}}>
+      <div className="pre-order" style={{fontSize: this.props.fontSize, backgroundColor: this.state.bgColor}}>
         {this.hasText()}
         <div style={{ textAlign: 'center' }}>
           {this.state.response

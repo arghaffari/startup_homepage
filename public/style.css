@@ -20836,7 +20836,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
 .pre-order-main {
-  min-height: 100vh;
+  min-height: 60vh;
   overflow: hidden; }
 
 @media screen and (min-width: 1200px) {
