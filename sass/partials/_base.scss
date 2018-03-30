@@ -779,10 +779,10 @@ h2.sub-title {
 }
 
 .blur {
-    background: url('images/shop2.jpeg') no-repeat;
-    background-size: cover;
+    // background: url('images/shop2.jpeg') no-repeat;
+    // background-size: cover;
     overflow: hidden;
-    filter: blur(50px);
+    // filter: blur(50px);
     position: absolute;
     height: 55vh;
     width: 100vw;
@@ -817,5 +817,14 @@ input::-webkit-inner-spin-button {
 .pre-order-main {
     min-height: 60vh;
     overflow: hidden;
+}
+
+.pre-order-features-wraper {
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
