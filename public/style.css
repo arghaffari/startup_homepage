@@ -20239,6 +20239,16 @@ h2.sub-title {
   margin: 0 auto;
   padding: 10px; }
 
+.pre-order-features-wraper {
+  width: 100%;
+  margin: 0 auto; }
+  .pre-order-features-wraper div {
+    text-align: center;
+    padding: 30px; }
+  .pre-order-features-wraper h1 {
+    margin: 0 auto;
+    text-align: center; }
+
 @media screen and (min-width: 1200px) {
   .subscription {
     width: 40%;
@@ -20546,7 +20556,16 @@ h2.sub-title {
       font-size: 18px; }
     .pre-order-main-desc p:nth-child(6) b {
       color: green;
-      font-size: 20px; } }
+      font-size: 20px; }
+  .pre-order-features-wraper {
+    width: 100%;
+    margin: 0 auto; }
+    .pre-order-features-wraper div {
+      text-align: center;
+      padding: 20px; }
+    .pre-order-features-wraper h1 {
+      margin: 0 auto;
+      text-align: center; } }
 
 @media screen and (max-width: 420px) and (min-width: 320px) {
   .subscription {
@@ -20645,7 +20664,16 @@ h2.sub-title {
       font-size: 15px; }
     .pre-order-main-desc p:nth-child(6) b {
       color: green;
-      font-size: 17px; } }
+      font-size: 17px; }
+  .pre-order-features-wraper {
+    width: 100%;
+    margin: 0 auto; }
+    .pre-order-features-wraper div {
+      text-align: center;
+      padding: 10px; }
+    .pre-order-features-wraper h1 {
+      margin: 0 auto;
+      text-align: center; } }
 
 @media screen and (max-width: 320px) {
   .subscription {
@@ -20836,12 +20864,10 @@ input::-webkit-inner-spin-button {
   min-height: 60vh;
   overflow: hidden; }
 
-.pre-order-features-wraper {
+.good-for-wraper {
   width: 100%;
+  text-align: center;
   margin: 0 auto; }
-  .pre-order-features-wraper h1 {
-    margin: 0 auto;
-    text-align: center; }
 
 @media screen and (min-width: 1200px) {
   #app-download {
