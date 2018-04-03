@@ -7,7 +7,6 @@ class Main extends Component {
   render() {
     return(
       <div className="pre-order-main padding text-align-right">
-        <div className="blur"/>
         <Row>
           <Col xs={24} sm={24} md={24} lg={12} xl={12}>     
             <div className="pre-order-main-desc">

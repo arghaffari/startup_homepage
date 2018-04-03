@@ -20,6 +20,7 @@ const HeaderContainer = ({headers}) => {
             </div>
           </Col>
           <Col className="menu" style={{padding: '1em'}} xs={24} sm={24} md={24} lg={12} xl={13}>
+            <img src="/dakhleto.svg" style={{height: '50px'}}/>
             <PageHeaders headers={headers} />
           </Col>
         </Row>

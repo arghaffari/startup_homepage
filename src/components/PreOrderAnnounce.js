@@ -119,44 +119,46 @@ class PreOrderAnnounce extends Component {
   render() {
     const countDown = this.state;
     return (
-      <div className="pre-order" style={{fontSize: this.props.fontSize, backgroundColor: this.state.bgColor}}>
-        {this.hasText()}
-        <div style={{ textAlign: 'center' }}>
-          {this.state.response
-            ? 
-            <div className="Countdown">
-              <span className="Countdown-col">
-                <span className="Countdown-col-element">
-                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.days)}</strong>
-                  <span  style={this.textStyle()}>{countDown.days === 1 ? 'روز' : 'روز'}</span>
+      <a href="/pages/landing-page/pre-order" target="_tab">
+        <div className="pre-order" style={{fontSize: this.props.fontSize, backgroundColor: this.state.bgColor}}>
+          {this.hasText()}
+          <div style={{ textAlign: 'center' }}>
+            {this.state.response
+              ? 
+              <div className="Countdown">
+                <span className="Countdown-col">
+                  <span className="Countdown-col-element">
+                    <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.days)}</strong>
+                    <span  style={this.textStyle()}>{countDown.days === 1 ? 'روز' : 'روز'}</span>
+                  </span>
                 </span>
-              </span>
 
-              <span className="Countdown-col">
-                <span className="Countdown-col-element">
-                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.hours)}</strong>
-                  <span style={this.textStyle()}>ساعت</span>
+                <span className="Countdown-col">
+                  <span className="Countdown-col-element">
+                    <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.hours)}</strong>
+                    <span style={this.textStyle()}>ساعت</span>
+                  </span>
                 </span>
-              </span>
 
 
-              <span className="Countdown-col">
-                <span className="Countdown-col-element">
-                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.min)}</strong>
-                  <span style={this.textStyle()}>دقیقه</span>
+                <span className="Countdown-col">
+                  <span className="Countdown-col-element">
+                    <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.min)}</strong>
+                    <span style={this.textStyle()}>دقیقه</span>
+                  </span>
                 </span>
-              </span>
 
-              <span className="Countdown-col">
-                <span className="Countdown-col-element">
-                  <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.sec)}</strong>
-                  <span style={this.textStyle()}>ثانیه</span>
+                <span className="Countdown-col">
+                  <span className="Countdown-col-element">
+                    <strong style={this.textStyle()}>{this.addLeadingZeros(countDown.sec)}</strong>
+                    <span style={this.textStyle()}>ثانیه</span>
+                  </span>
                 </span>
-              </span>
-            </div>
-            : <p>Loading...</p>}
+              </div>
+              : <p>Loading...</p>}
+          </div>
         </div>
-      </div>
+      </a>
     );
   }
 }

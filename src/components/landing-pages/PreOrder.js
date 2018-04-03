@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Main from './pre-order/Main';
 import Features from './pre-order/Features';
-import GoodFor from './pre-order/GoodFor'
+import GoodFor from './pre-order/GoodFor';
+import FooterContainer from '../FooterContainer';
 
 class PreOrder extends Component {
   render(){
@@ -10,6 +11,7 @@ class PreOrder extends Component {
         <Main />
         <Features />
         <GoodFor />
+        <FooterContainer />
       </div>
     );
   }

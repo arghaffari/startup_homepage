@@ -11,18 +11,6 @@
         "englishTitle": "Blog"
       },
       {
-        "id": 3,
-        "persianTitle": "محصولات",
-        "englishTitle": "Products",
-        "products": [
-          {
-            "productPersianName": "رامونا",
-            "productEnglishName": "Ramona",
-            "description": ""
-          }
-        ]
-      },
-      {
         "id": 4,
         "persianTitle": "تماس با ما",
         "englishTitle": "Contact Us"

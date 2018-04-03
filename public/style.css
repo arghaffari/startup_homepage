@@ -20834,12 +20834,6 @@ h2.sub-title {
   .subscription h1 {
     margin: 20px; }
 
-.blur {
-  overflow: hidden;
-  position: absolute;
-  height: 55vh;
-  width: 100vw; }
-
 .padding {
   padding: 20px; }
 
@@ -20861,13 +20855,22 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
 .pre-order-main {
-  min-height: 60vh;
-  overflow: hidden; }
+  min-height: 75vh;
+  overflow: hidden;
+  padding-top: 50px; }
 
 .good-for-wraper {
   width: 100%;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 50px; }
+  .good-for-wraper h1 {
+    margin: 15px; }
+  .good-for-wraper p {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px; }
 
 @media screen and (min-width: 1200px) {
   #app-download {

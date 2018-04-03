@@ -817,15 +817,6 @@ h2.sub-title {
     }
 }
 
-.blur {
-    // background: url('images/shop2.jpeg') no-repeat;
-    // background-size: cover;
-    overflow: hidden;
-    // filter: blur(50px);
-    position: absolute;
-    height: 55vh;
-    width: 100vw;
-}
 
 .padding {
     padding: 20px;
@@ -854,14 +845,25 @@ input::-webkit-inner-spin-button {
 }
 
 .pre-order-main {
-    min-height: 60vh;
+    min-height: 75vh;
     overflow: hidden;
+    padding-top: 50px;
 }
 
 .good-for-wraper {
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 50px;
+    h1 {
+        margin: 15px;
+    }
+    p {
+        font-size: 17px;
+        font-weight: bold;
+        margin: 10px;
+    }
 }
 
 

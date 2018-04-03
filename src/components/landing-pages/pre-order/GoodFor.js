@@ -22,7 +22,7 @@ class GoodFor extends Component {
           <Col xs={24} sm={12} md={8} lg={6} xl={6}>
             <div>
               <img src="\images\decore.jpg"/>
-              <p>لوازم خانگی</p>
+              <p>دکوراسیون و لوازم خانگی</p>
             </div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={6} xl={6}>
@@ -53,11 +53,14 @@ class GoodFor extends Component {
             <div>
               <img src="\images\question.jpg"/>
               <p>و هر صنفی که به صورت اعداد شمارشی و دانه‌ای کالا یا خدمات ارائه می‌دهد</p>
-              <h2>برای اطلاع بیشتر با ما تماس بگیرید</h2>
-              <h3>02188211202</h3>
+
             </div>
           </Col>  
         </Row>
+        <div style={{width: '100%', margin: '50px auto', textAlign: 'center'}}>
+          <h2>برای اطلاع بیشتر با ما تماس بگیرید</h2>
+          <h3>02188211202</h3>
+        </div>
       </div>
     );
   }
